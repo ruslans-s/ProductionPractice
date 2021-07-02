@@ -3,6 +3,7 @@ using NeuralNetworkML.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -24,6 +25,10 @@ namespace WebServer.Controllers
         [HttpGet("{data}")]
         public string Get(string data)
         {
+            data.ToLower(); // Приводим к нижнему регистру
+
+            data = Regex.Replace(data, @"[-.?!)(,:]", " "); //Удаляем знаки пунктуаций
+
             // Создание входных данных
             ModelInput sampleData = new ModelInput()
             {
@@ -32,7 +37,7 @@ namespace WebServer.Controllers
             //Получение ответа
             var predictionResult = ConsumeModel.Predict(sampleData);
 
-            return "Прогноз: " + predictionResult.Prediction + " Выходные веса:" +String.Join(",", predictionResult.Score);
+            return "Прогноз: " + predictionResult.Prediction + " Выходные веса: " +String.Join(",", predictionResult.Score);
         }
 
         // POST api/<TextChecking>
