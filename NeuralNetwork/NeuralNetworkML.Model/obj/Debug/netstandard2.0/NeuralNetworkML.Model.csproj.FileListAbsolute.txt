@@ -1,0 +1,10 @@
+D:\repos\norbit\Finaly\NeuralNetwork\NeuralNetworkML.Model\bin\Debug\netstandard2.0\MLModel.zip
+D:\repos\norbit\Finaly\NeuralNetwork\NeuralNetworkML.Model\bin\Debug\netstandard2.0\NeuralNetworkML.Model.deps.json
+D:\repos\norbit\Finaly\NeuralNetwork\NeuralNetworkML.Model\bin\Debug\netstandard2.0\NeuralNetworkML.Model.dll
+D:\repos\norbit\Finaly\NeuralNetwork\NeuralNetworkML.Model\bin\Debug\netstandard2.0\NeuralNetworkML.Model.pdb
+D:\repos\norbit\Finaly\NeuralNetwork\NeuralNetworkML.Model\obj\Debug\netstandard2.0\NeuralNetworkML.Model.csprojAssemblyReference.cache
+D:\repos\norbit\Finaly\NeuralNetwork\NeuralNetworkML.Model\obj\Debug\netstandard2.0\NeuralNetworkML.Model.AssemblyInfoInputs.cache
+D:\repos\norbit\Finaly\NeuralNetwork\NeuralNetworkML.Model\obj\Debug\netstandard2.0\NeuralNetworkML.Model.AssemblyInfo.cs
+D:\repos\norbit\Finaly\NeuralNetwork\NeuralNetworkML.Model\obj\Debug\netstandard2.0\NeuralNetworkML.Model.csproj.CoreCompileInputs.cache
+D:\repos\norbit\Finaly\NeuralNetwork\NeuralNetworkML.Model\obj\Debug\netstandard2.0\NeuralNetworkML.Model.dll
+D:\repos\norbit\Finaly\NeuralNetwork\NeuralNetworkML.Model\obj\Debug\netstandard2.0\NeuralNetworkML.Model.pdb
