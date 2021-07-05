@@ -14,12 +14,13 @@ namespace WebServer.Controllers
     [ApiController]
     public class TextChecking : ControllerBase
     {
-        // GET: api/<TextChecking>
+
+     /*   // GET: api/<TextChecking>
         [HttpGet]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
-        }
+        }*/
 
         // GET api/<TextChecking>/Text
         [HttpGet("{data}")]
@@ -32,7 +33,7 @@ namespace WebServer.Controllers
             // Создание входных данных
             ModelInput sampleData = new ModelInput()
             {
-                Clear_text = data,
+                Col0 = data,
             };
             //Получение ответа
             var predictionResult = ConsumeModel.Predict(sampleData);
@@ -57,5 +58,6 @@ namespace WebServer.Controllers
         public void Delete(int id)
         {
         }
+
     }
 }

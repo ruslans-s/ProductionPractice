@@ -3324,8 +3324,8 @@
     },
     "NeuralNetworkML.Model/1.0.0": {
       "type": "project",
-      "path": "../../NeuralNetwork/NeuralNetworkML.Model/NeuralNetworkML.Model.csproj",
-      "msbuildProject": "../../NeuralNetwork/NeuralNetworkML.Model/NeuralNetworkML.Model.csproj"
+      "path": "../../NeuralNetworkML.Model/NeuralNetworkML.Model.csproj",
+      "msbuildProject": "../../NeuralNetworkML.Model/NeuralNetworkML.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3360,8 +3360,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\repos\\norbit\\Finaly\\NeuralNetwork\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj": {
-              "projectPath": "D:\\repos\\norbit\\Finaly\\NeuralNetwork\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj"
+            "D:\\repos\\norbit\\Finaly\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj": {
+              "projectPath": "D:\\repos\\norbit\\Finaly\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj"
             }
           }
         }

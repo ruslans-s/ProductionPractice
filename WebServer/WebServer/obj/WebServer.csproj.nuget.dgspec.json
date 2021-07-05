@@ -4,14 +4,14 @@
     "D:\\repos\\norbit\\Finaly\\WebServer\\WebServer\\WebServer.csproj": {}
   },
   "projects": {
-    "D:\\repos\\norbit\\Finaly\\NeuralNetwork\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj": {
+    "D:\\repos\\norbit\\Finaly\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\norbit\\Finaly\\NeuralNetwork\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj",
+        "projectUniqueName": "D:\\repos\\norbit\\Finaly\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj",
         "projectName": "NeuralNetworkML.Model",
-        "projectPath": "D:\\repos\\norbit\\Finaly\\NeuralNetwork\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj",
+        "projectPath": "D:\\repos\\norbit\\Finaly\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj",
         "packagesPath": "C:\\Users\\sadik\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\norbit\\Finaly\\NeuralNetwork\\NeuralNetworkML.Model\\obj\\",
+        "outputPath": "D:\\repos\\norbit\\Finaly\\NeuralNetworkML.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sadik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\repos\\norbit\\Finaly\\NeuralNetwork\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj": {
-                "projectPath": "D:\\repos\\norbit\\Finaly\\NeuralNetwork\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj"
+              "D:\\repos\\norbit\\Finaly\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj": {
+                "projectPath": "D:\\repos\\norbit\\Finaly\\NeuralNetworkML.Model\\NeuralNetworkML.Model.csproj"
               }
             }
           }
