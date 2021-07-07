@@ -15,12 +15,13 @@ namespace WebServer.Controllers
     public class TextChecking : ControllerBase
     {
 
-     /*   // GET: api/<TextChecking>
+       // GET: api/<TextChecking>
+       //Пустой запрос с "ошибкой"
         [HttpGet]
-        public IEnumerable<string> Get()
+        public string Get()
         {
-            return new string[] { "value1", "value2" };
-        }*/
+            return "EROR 404 " + " Не задана входная строка";
+        }
 
         // GET api/<TextChecking>/Text
         [HttpGet("{data}")]
