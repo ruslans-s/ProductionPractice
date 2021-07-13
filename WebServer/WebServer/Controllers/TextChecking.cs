@@ -42,9 +42,9 @@ namespace WebServer.Controllers
             return "Прогноз: " + predictionResult.Prediction + " Выходные веса: " +String.Join(",", predictionResult.Score);
         }
 
-        // POST api/<TextChecking>
+      /*  // POST api/<TextChecking>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] string data)
         {
         }
 
@@ -58,7 +58,7 @@ namespace WebServer.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-        }
+        }*/
 
     }
 }
