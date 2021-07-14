@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>7d1039f5-8ad3-4509-bbab-82292f149c92</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,5 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\NeuralNetworkML.Model\NeuralNetworkML.Model.csproj" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>
