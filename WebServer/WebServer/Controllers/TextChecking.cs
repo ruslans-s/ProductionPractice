@@ -10,22 +10,21 @@ using System.Threading.Tasks;
 
 namespace WebServer.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class TextChecking : ControllerBase
     {
 
-       // GET: api/<TextChecking>
-       //Пустой запрос с "ошибкой"
-        [HttpGet]
-        public string Get()
+        public class OutputString
         {
-            return "EROR 404 " + " Не задана входная строка";
+            public string Output { get; set; }
+        }
+        public class InputString
+        {
+            public string Input { get; set; }
         }
 
-        // GET api/<TextChecking>/Text
-        [HttpGet("{data}")]
-        public string Get(string data)
+        public OutputString RequestProcessing(string data)
         {
             data.ToLower(); // Приводим к нижнему регистру
 
@@ -36,29 +35,54 @@ namespace WebServer.Controllers
             {
                 Col0 = data,
             };
+
             //Получение ответа
             var predictionResult = ConsumeModel.Predict(sampleData);
 
-            return "Прогноз: " + predictionResult.Prediction + " Выходные веса: " +String.Join(",", predictionResult.Score);
+            //ВЫвод ответа
+            if (Math.Abs(predictionResult.Score[0] - predictionResult.Score[1]) <= 0.2)
+            {
+                return (new OutputString { Output = "Neutral" });
+            }
+            else if (predictionResult.Prediction == "-1")
+            {
+                return (new OutputString { Output = "Negative" });
+            }
+            else
+            {
+                return (new OutputString { Output = "Positive" });
+            }
         }
 
-      /*  // POST api/<TextChecking>
-        [HttpPost]
-        public void Post([FromBody] string data)
+        // GET: api/<TextChecking>
+        //Пустой запрос с "ошибкой"
+        [HttpGet]
+        public OutputString Get()
         {
+            return (new OutputString { Output = "Error: empty request"});
         }
 
-        // PUT api/<TextChecking>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpGet("{data}")]
+        public OutputString Get(string data)
         {
+            return RequestProcessing(data);
+            //return "Прогноз: " + predictionResult.Prediction + " Выходные веса: " +String.Join(",", predictionResult.Score);
         }
 
-        // DELETE api/<TextChecking>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+
+        //Запрос через формат JSON
+        [HttpGet("jsonquery")]
+        public ActionResult<OutputString> GetFromJSON([FromBody] InputString inputJSON)
         {
-        }*/
+            if (String.IsNullOrEmpty(inputJSON.Input))
+            {
+                return (new OutputString { Output = "Empty Query" });
+            }
+            else
+            {
+                return RequestProcessing(inputJSON.Input);
+            }
+        }
 
     }
 }
