@@ -21,7 +21,7 @@ namespace WebServer.Controllers
             public string Input { get; set; }
         }
 
-        public OutputString RequestProcessing(string data)
+        private OutputString RequestProcessing(string data)
         {
             data.ToLower(); // Приводим к нижнему регистру
 
@@ -53,13 +53,13 @@ namespace WebServer.Controllers
 
         //Пустой запрос с "ошибкой"
         [HttpGet]
-        public OutputString Get()
+        public ActionResult<OutputString> Get()
         {
             return (new OutputString { Output = "Error: empty request"});
         }
 
         [HttpGet("{data}")]
-        public OutputString Get(string data)
+        public ActionResult<OutputString> Get(string data)
         {
             return RequestProcessing(data);
             //return "Прогноз: " + predictionResult.Prediction + " Выходные веса: " +String.Join(",", predictionResult.Score);
